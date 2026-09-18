@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "verify": "esbuild scripts/verify-inventory.mjs --bundle --format=esm --platform=node --outfile=scripts/.cache/verify.mjs --log-level=warning && node scripts/.cache/verify.mjs"
   },
   "dependencies": {
     "@vitejs/plugin-vue": "^6.0.1",

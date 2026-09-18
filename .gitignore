@@ -4,6 +4,7 @@ dist/
 build/
 .vite/
 .cache/
+scripts/.cache/
 coverage/
 *.log
 npm-debug.log*
